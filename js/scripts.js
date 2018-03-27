@@ -11,6 +11,8 @@ $(document).ready(function() {
       alert("input positive value");
     } else if (inputNumber1 < inputNumber2) {
       alert("Enter a max number larger than the increment number");
+    } else if (isNaN(inputNumber1) || isNaN(inputNumber1)) {
+      alert("Enter a number!");
     } else {
       for (var index = 0; index <= inputNumber1; index += inputNumber2) {
         $("#result").append("<li>" + index + "</li>");
